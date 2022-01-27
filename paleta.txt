@@ -1,6 +1,0 @@
-claro #efe4e2
-marrom #803e30
-cinza azulado #878b8e
-marrom claro #ecdccd
-rosa #f2c3c8
-marrom escuro #383038
