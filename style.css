@@ -91,7 +91,6 @@ main{
 
 .banner{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 3rem;
@@ -116,6 +115,13 @@ main{
     color: rgba(0, 0, 0, 0.596);
     margin-top: 1.5rem;
     font-size: 12px;
+}
+
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
 }
 
 .yoga-pose{
