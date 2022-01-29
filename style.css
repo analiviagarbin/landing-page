@@ -12,6 +12,14 @@ body{
     background-color: rgb(248, 248, 248);
     min-height: 100vh;
     min-width: 100vw;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+header{
+    position: absolute;
+    top: 0;
 }
 
 a {
@@ -20,17 +28,15 @@ a {
     transition: 0.3s;
 }
 
-main{
-    padding: 2rem, 4rem;
-}
-
-.header-home{
+.header-home{    
+    height: 10vh; /*unidade de medida que se adapta a altura da janela de visu do usuário: max 100*/
+    width: 100vw;
     display: flex;
-    justify-content: space-evenly; /*espaço ao redor é igual que o espaço entre eles*/
+    position: fixed;
+    justify-content: space-around; /*espaço ao redor é igual que o espaço entre eles*/
     align-items: center;
     background: rgb(248, 248, 248);
-    height: 70px; /*unidade de medida que se adapta a altura da janela de visu do usuário: max 100*/
-    width: 100%;
+    z-index: 1;
 }
 
 .logo{
@@ -50,6 +56,7 @@ main{
 .header-list li a{
     position: relative;
     margin-left: 30px;
+    margin-right: 30px;
 }
 
 .header-list li a:hover{
@@ -75,6 +82,40 @@ main{
     background-color: rgb(248, 248, 248); 
 }
 
+main{
+    height: 80vh;
+}
+
+.banner{
+    display: flex;
+    color: #383038;
+    font-size: large;
+    height: 80vh;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0rem 4rem 7rem;
+}
+
+.banner-text h1{
+    letter-spacing: 4px;
+    line-height: 60px;
+    font-size: 60px;
+}
+
+.banner-text h4{
+    color: #0a7e6e;
+    letter-spacing: 4px;
+    line-height: 40px;
+    font-size: 23px;
+}
+
+.banner-text h5{
+    color: rgba(0, 0, 0, 0.596);
+    margin-top: 1.5rem;
+    font-size: 15px;
+}
+
 .button {
     color: #0a7e6e;
     border: 1px solid #0a7e6e;
@@ -89,62 +130,46 @@ main{
     color: rgb(248, 248, 248);
 }
 
-.banner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem;
-    color: #383038;
-    font-size: large;
-}
-
-.banner-text h1{
-    letter-spacing: 4px;
-    line-height: 40px;
-    font-size: 50px;
-}
-
-.banner-text h4{
-    color: #0a7e6e;
-    letter-spacing: 4px;
-    line-height: 40px;
-    font-size: 20px;
-}
-
-.banner-text h5{
-    color: rgba(0, 0, 0, 0.596);
-    margin-top: 1.5rem;
-    font-size: 12px;
-}
-
-.images{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    position: relative;
-}
-
-.yoga-pose{
-    height: 500px;
-    margin-left: 30px;
-}
-
-
-footer{
-    background-color: rgb(248, 248, 248);
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.banner-sm{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
 }
 
 .sm {
-    height: 30px;
-    margin-right: 10px;
-    margin-bottom: 20px;
+    height: 35px;
     transition: 0.3s;
 }
 
 .sm:hover {
     opacity: 0.7;
+}
+
+.images{
+    height: 80vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yoga-pose{
+    height: 510px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(248, 248, 248);
+    height: 10vh;
+    width: 100%;
+    line-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo{
+    height: 70px;
+    transition: 0.3s;
 }
