@@ -1,5 +1,5 @@
 <h1>Landing Page</h1>
-<p>💖 This is a simple landing page made with HTML and CSS.
+<p>💖 This is a simple landing page made with HTML, CSS and JavaScript.
 
 <br><h2>Final result</h2>
 <h3 align="center">Desktop 👩‍💻</h3>
